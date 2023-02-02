@@ -1,0 +1,1 @@
+Put this folder in '~/.config/kitty' to works, and install  the fonts declared in file
