@@ -3,12 +3,10 @@ require("packer").startup(function(use)
     use "lukas-reineke/indent-blankline.nvim"
     use "wbthomason/packer.nvim"
     use "windwp/nvim-ts-autotag"
-    use "olimorris/onedarkpro.nvim"
     use "norcalli/nvim-colorizer.lua"
     use "vim-airline/vim-airline"
     use "vim-airline/vim-airline-themes"
     use "nvim-telescope/telescope.nvim"
-    -- use "ryanoasis/vim-devicons"
     use "voldikss/vim-floaterm"
     use {
         "neovim/nvim-lspconfig",
