@@ -23,6 +23,7 @@ vim.opt.synmaxcol = 240
 vim.g.background = "dark"
 vim.opt.termguicolors = true
 vim.g.transparent_enabled = true
+vim.cmd.colorscheme "dracula"
 
 -- Editor
 vim.opt.number = true

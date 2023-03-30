@@ -1,7 +1,8 @@
 require("packer").startup(function(use)
+    use "wbthomason/packer.nvim"
     use "sbdchd/neoformat"
     use "lukas-reineke/indent-blankline.nvim"
-    use "wbthomason/packer.nvim"
+    use 'Mofiqul/dracula.nvim'
     use "windwp/nvim-ts-autotag"
     use "norcalli/nvim-colorizer.lua"
     use "vim-airline/vim-airline"
