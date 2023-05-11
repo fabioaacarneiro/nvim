@@ -7,7 +7,7 @@ require'nvim-treesitter.configs'.setup {
         -- additional_vim_regex_highlighting = true,
     },
     indent = {
-        enable = false,
+        enable = true,
         disable = {
 --              "html",
 --              "htmldjango"

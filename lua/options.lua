@@ -1,6 +1,9 @@
 
 -- My Options config file
 
+-- nome do arquivo no inicio do editor
+-- vim.opt.winbar:append("%t")
+
 -- mapleader key
 vim.g.mapleader = ','
 
@@ -20,9 +23,8 @@ vim.opt.lazyredraw = true
 vim.opt.synmaxcol = 240
 
 -- Theme
-vim.g.background = "dark"
 vim.opt.termguicolors = true
-vim.g.transparent_enabled = true
+vim.g.transparent_enabled = false
 vim.cmd.colorscheme "dracula"
 
 -- Editor
@@ -54,12 +56,12 @@ vim.opt.whichwrap:append {
 }
 
 -- Floaterminal setup
--- vim.g.floaterm_shell = 'powershell'
--- vim.g.floaterm_keymap_new = '<Leader>ft'
--- vim.g.floaterm_keymap_prev = '<Leader>fp'
--- vim.g.floaterm_keymap_next = '<Leader>fn'
--- vim.g.floaterm_keymap_toggle = '<Leader>t'
--- vim.g.floaterm_keymap_kill = '<Leader>fk'
--- vim.g.floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\\ )<'
--- vim.g.floaterm_height = .6
--- vim.g.floaterm_width = .9
+vim.g.floaterm_shell = 'powershell'
+vim.g.floaterm_keymap_new = '<Leader>ct'
+vim.g.floaterm_keymap_prev = '<Leader>pt'
+vim.g.floaterm_keymap_next = '<Leader>nt'
+vim.g.floaterm_keymap_toggle = '<C-t>'
+vim.g.floaterm_keymap_kill = '<Leader>kt'
+vim.g.floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\\ )<'
+vim.g.floaterm_height = .9
+vim.g.floaterm_width = .9
