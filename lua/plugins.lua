@@ -4,13 +4,10 @@ require("packer").startup(function(use)
     use "sbdchd/neoformat"
     use "EdenEast/nightfox.nvim"
     use "lukas-reineke/indent-blankline.nvim"
-<<<<<<< HEAD
     use 'Mofiqul/dracula.nvim'
     use 'olimorris/onedarkpro.nvim'
-=======
     use "Mofiqul/dracula.nvim"
     use "ishan9299/nvim-solarized-lua"
->>>>>>> 246534089b37aed4135b427eea39477c51cc49c5
     use "windwp/nvim-ts-autotag"
     use "norcalli/nvim-colorizer.lua"
     use "vim-airline/vim-airline"
@@ -22,20 +19,14 @@ require("packer").startup(function(use)
         tag = "*",
         requires = 'nvim-tree/nvim-web-devicons'
     }
-    -- use {
-    --     'maxmx03/solarized.nvim',
-    --     config = function ()
-    --         local success, solarized = pcall(require, 'solarized')
-    --         vim.o.background = 'light'
-    --         solarized:setup {
-    --             config = {
-    --                 theme = 'vscode',
-    --                 transparent = false
-    --             }
-    --         }
-    --         --vim.cmd 'colorscheme solarized'
-    --     end 
-    -- } 
+    use({
+        'projekt0n/github-nvim-theme',
+        config = function()
+            require('github-theme').setup({
+            })
+            vim.cmd('colorscheme github_dark')
+        end
+    })
     use "voldikss/vim-floaterm"
     use "ishan9299/nvim-solarized-lua"
     use "hylang/vim-hy"
