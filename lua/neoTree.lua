@@ -6,6 +6,7 @@ require("neo-tree").setup({
       folder_empty = "",
       highlight = "NeoTreeFileIcon"
     },
+    use_libuv_file_watcher = true,
     modified = {
       symbol = "",
       highlight = "NeoTreeModified",

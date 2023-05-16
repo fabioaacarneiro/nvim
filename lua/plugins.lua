@@ -1,14 +1,24 @@
 require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
+    use 'fgheng/winbar.nvim'
     use "sbdchd/neoformat"
+    use "EdenEast/nightfox.nvim"
     use "lukas-reineke/indent-blankline.nvim"
     use 'Mofiqul/dracula.nvim'
+    use 'olimorris/onedarkpro.nvim'
     use "windwp/nvim-ts-autotag"
     use "norcalli/nvim-colorizer.lua"
     use "vim-airline/vim-airline"
     use "vim-airline/vim-airline-themes"
     use "nvim-telescope/telescope.nvim"
     use "voldikss/vim-floaterm"
+    use "ishan9299/nvim-solarized-lua"
+    use "hylang/vim-hy"
+    use {
+        'akinsho/bufferline.nvim',
+        tag = "*",
+        requires = 'nvim-tree/nvim-web-devicons'
+    }
     use {
         "neovim/nvim-lspconfig",
         requires = {

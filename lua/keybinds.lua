@@ -5,6 +5,9 @@ local ns = { noremap = true, silent = true }
 vim.keymap.set("i", "<M-q>", "/", ns)
 vim.keymap.set("i", "<M-w>", "?", ns)
 
+-- create a pyproject.toml bind for pylint
+vim.keymap.set("n", "<Leader>pl", ":! pylint --generate-toml-config > pyproject.toml<CR>", ns)
+
 -- Command
 vim.keymap.set("n", ";", ":", { noremap = true })
 vim.keymap.set("n", "<Leader>r", ":luafile %<CR>", ns)
@@ -15,8 +18,8 @@ vim.keymap.set("n", "<Leader>ff", vim.lsp.buf.format, ns)
 -- Window
 vim.keymap.set("n", "<C-j>", ":resize -2<CR>", ns)
 vim.keymap.set("n", "<C-k>", ":resize +2<CR>", ns)
-vim.keymap.set("n", "<C-l>", ":vertical resize +2<CR>", ns)
-vim.keymap.set("n", "<C-h>", ":vertical resize -2<CR>", ns)
+vim.keymap.set("n", "<C-h>", ":vertical resize +2<CR>", ns)
+vim.keymap.set("n", "<C-l>", ":vertical resize -2<CR>", ns)
 vim.keymap.set("n", "<Leader>h", ":<C-u>split<CR>", ns)
 vim.keymap.set("n", "<Leader>v", ":<C-u>vsplit<CR>", ns)
 

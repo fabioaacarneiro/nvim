@@ -28,8 +28,26 @@ local function get_config_options(server_name)
     end
 end
 
-mason.setup({})
-mason_lspconfig.setup({})
+mason.setup({
+    pip = {
+        upgrade_pip = true
+    },
+    ensure_installed = {
+        "pylint",
+    }
+})
+mason_lspconfig.setup({
+    ensure_installed = {
+        "tsserver",
+        "jsonls",
+        "pylsp",
+        --"gopls",
+        "html",
+        "sqlls",
+        "vuels",
+        "volar"
+    }
+})
 mason_lspconfig.setup_handlers({function(server_name)
     local server = lspconfig[server_name]
     return server.setup(get_config_options(server_name))

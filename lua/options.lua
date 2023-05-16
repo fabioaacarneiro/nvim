@@ -17,7 +17,7 @@ vim.opt.mouse = 'a'
 vim.opt.swapfile = false
 vim.opt.history = 100
 vim.opt.lazyredraw = true
-vim.opt.synmaxcol = 240
+-- vim.opt.synmaxcol = 240
 
 -- Theme
 vim.g.background = "dark"
@@ -29,14 +29,14 @@ vim.cmd.colorscheme "dracula"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = true
-vim.opt.signcolumn = 'yes'
+--vim.opt.signcolumn = 'yes'
 vim.opt.showmatch = true
 vim.opt.showmode = false
 vim.opt.foldmethod = 'marker'
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.conceallevel = 0
-vim.opt.colorcolumn = '80'
+--vim.opt.colorcolumn = '79'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.expandtab = true
@@ -54,12 +54,12 @@ vim.opt.whichwrap:append {
 }
 
 -- Floaterminal setup
--- vim.g.floaterm_shell = 'powershell'
--- vim.g.floaterm_keymap_new = '<Leader>ft'
--- vim.g.floaterm_keymap_prev = '<Leader>fp'
--- vim.g.floaterm_keymap_next = '<Leader>fn'
--- vim.g.floaterm_keymap_toggle = '<Leader>t'
--- vim.g.floaterm_keymap_kill = '<Leader>fk'
--- vim.g.floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\\ )<'
--- vim.g.floaterm_height = .6
--- vim.g.floaterm_width = .9
+vim.g.floaterm_shell = 'powershell'
+vim.g.floaterm_keymap_new = '<Leader>ct'
+vim.g.floaterm_keymap_prev = '<Leader>pt'
+vim.g.floaterm_keymap_next = '<Leader>nt'
+vim.g.floaterm_keymap_toggle = '<C-t>'
+vim.g.floaterm_keymap_kill = '<Leader>kt'
+vim.g.floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\\ )<'
+vim.g.floaterm_height = .9
+vim.g.floaterm_width = .9
