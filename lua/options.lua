@@ -1,6 +1,9 @@
 
 -- My Options config file
 
+-- nome do arquivo no inicio do editor
+-- vim.opt.winbar:append("%t")
+
 -- mapleader key
 vim.g.mapleader = ','
 
@@ -20,9 +23,8 @@ vim.opt.lazyredraw = true
 -- vim.opt.synmaxcol = 240
 
 -- Theme
-vim.g.background = "dark"
 vim.opt.termguicolors = true
-vim.g.transparent_enabled = true
+vim.g.transparent_enabled = false
 vim.cmd.colorscheme "dracula"
 
 -- Editor
