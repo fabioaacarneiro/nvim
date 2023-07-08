@@ -12,7 +12,7 @@ vim.opt.termguicolors = true -- precisa ser adicionado antes do plugin
 require('colorizer').setup()
 
 -- AirLine Theme setup
-vim.g.airline_theme = 'violet'
+vim.g.airline_theme = 'solarized'
 
 -- General Setup
 vim.opt.compatible = false
@@ -25,21 +25,21 @@ vim.opt.lazyredraw = true
 -- Theme
 vim.opt.termguicolors = true
 vim.g.transparent_enabled = false
-vim.cmd.colorscheme "dracula"
+vim.cmd.colorscheme "solarized-high"
 
 -- Editor
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = true
 --vim.opt.signcolumn = 'yes'
-vim.opt.showmatch = true
+vim.opt.showmatch = false
 vim.opt.showmode = false
 vim.opt.foldmethod = 'marker'
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.conceallevel = 0
 --vim.opt.colorcolumn = '79'
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.scrolloff = 10
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
@@ -56,7 +56,9 @@ vim.opt.whichwrap:append {
 }
 
 -- Floaterminal setup
-vim.g.floaterm_shell = 'powershell'
+-- vim.g.floaterm_shell = 'powershell'
+-- vim.g.floaterm_shell = 'bash'
+vim.g.floaterm_shell = 'zsh'
 vim.g.floaterm_keymap_new = '<Leader>ct'
 vim.g.floaterm_keymap_prev = '<Leader>pt'
 vim.g.floaterm_keymap_next = '<Leader>nt'

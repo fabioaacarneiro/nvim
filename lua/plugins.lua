@@ -1,5 +1,6 @@
 require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
+    use "xiyaowong/transparent.nvim"
     use 'fgheng/winbar.nvim'
     use "sbdchd/neoformat"
     use "EdenEast/nightfox.nvim"
@@ -19,14 +20,14 @@ require("packer").startup(function(use)
         tag = "*",
         requires = 'nvim-tree/nvim-web-devicons'
     }
-    use({
-        'projekt0n/github-nvim-theme',
-        config = function()
-            require('github-theme').setup({
-            })
-            vim.cmd('colorscheme github_dark')
-        end
-    })
+    -- use({
+    --     'projekt0n/github-nvim-theme',
+    --     config = function()
+    --         require('github-theme').setup({
+    --         })
+    --         vim.cmd('colorscheme github_dark')
+    --     end
+    -- })
     use "voldikss/vim-floaterm"
     use "ishan9299/nvim-solarized-lua"
     use "hylang/vim-hy"

@@ -1,13 +1,13 @@
 
 -- setup autoload for django html
--- vim.api.nvim_create_autocmd(
---     {
---         "VimEnter"
---     },
---     {
---         command = "set background=dark",
---     }
--- )
+vim.api.nvim_create_autocmd(
+    {
+        "VimEnter"
+    },
+    {
+        command = ":TransparentEnable",
+    }
+)
 
 
 vim.api.nvim_create_autocmd(
