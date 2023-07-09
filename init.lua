@@ -4,5 +4,5 @@ require "keybinds"
 
 -- Você pode usar o campo `config` do packer para chamar esses arquivos
 require "airlineOptions"
-require "autocommands"
+require "autoloads"
 require "bufferline-setup"
