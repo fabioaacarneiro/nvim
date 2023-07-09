@@ -9,6 +9,10 @@ vim.api.nvim_create_autocmd(
     }
 )
 
+vim.api.nvim_create_autocmd({"VimEnter"}, {
+    pattern = {"*.html", ".jsx", ".tsx", "*.js", "*.htmx"},
+    command = ":EmmetInstall"
+})
 
 vim.api.nvim_create_autocmd(
   {

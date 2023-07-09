@@ -1,13 +1,13 @@
 require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
     use "xiyaowong/transparent.nvim"
-    use 'fgheng/winbar.nvim'
+    use "mattn/emmet-vim"
+    use "fgheng/winbar.nvim"
     use "sbdchd/neoformat"
     use "EdenEast/nightfox.nvim"
     use "lukas-reineke/indent-blankline.nvim"
-    use 'Mofiqul/dracula.nvim'
-    use 'olimorris/onedarkpro.nvim'
     use "Mofiqul/dracula.nvim"
+    use "olimorris/onedarkpro.nvim"
     use "ishan9299/nvim-solarized-lua"
     use "windwp/nvim-ts-autotag"
     use "norcalli/nvim-colorizer.lua"
@@ -16,26 +16,20 @@ require("packer").startup(function(use)
     use "nvim-telescope/telescope.nvim"
     -- use "nvim-tree/nvim-web-devicons"
     use {
-        'akinsho/bufferline.nvim',
+        "akinsho/bufferline.nvim",
         tag = "*",
-        requires = 'nvim-tree/nvim-web-devicons'
+        requires = "nvim-tree/nvim-web-devicons"
     }
     -- use({
-    --     'projekt0n/github-nvim-theme',
+    --     "projekt0n/github-nvim-theme",
     --     config = function()
-    --         require('github-theme').setup({
+    --         require("github-theme").setup({
     --         })
     --         vim.cmd('colorscheme github_dark')
     --     end
     -- })
     use "voldikss/vim-floaterm"
-    use "ishan9299/nvim-solarized-lua"
     use "hylang/vim-hy"
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "*",
-        requires = 'nvim-tree/nvim-web-devicons'
-    }
     use {
         "neovim/nvim-lspconfig",
         requires = {
@@ -50,7 +44,7 @@ require("packer").startup(function(use)
         "hrsh7th/nvim-cmp",
         requires = {
             "hrsh7th/cmp-nvim-lsp",
-                "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
             "L3MON4D3/LuaSnip",
             "rafamadriz/friendly-snippets",
