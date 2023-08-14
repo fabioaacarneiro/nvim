@@ -14,7 +14,6 @@ require('packer').startup(function(use)
   }
   use {
     'windwp/nvim-autopairs',
-    disable = false,
     requires = {
       'windwp/nvim-ts-autotag'
     },
@@ -72,18 +71,11 @@ require('packer').startup(function(use)
       require('nvim-cmp')
     end
   }
-  -- use {
-  --   "nvim-neo-tree/neo-tree.nvim",
-  --   branch = "v3.x",
-  --   requires = { 
-  --     "MunifTanjim/nui.nvim",
-  --   }
-  -- }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
     config = function()
-      require('treesitter')
+      require('treesitter-setup')
     end
   }
   use {

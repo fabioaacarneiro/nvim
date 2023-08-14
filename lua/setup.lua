@@ -16,10 +16,11 @@ c.colorscheme 'catppuccin-frappe'
 o.relativenumber = true
 o.wrap = true
 o.expandtab = false
-o.shiftwidth = 2
+o.shiftwidth = 4
 o.smartindent = true
+o.autoindent = false
 g.airline_theme = 'catppuccin'
-g.floaterm_shell = 'powershell'
+g.floaterm_shell = 'zsh'
 g.floaterm_title = '> Bem-vindo Fabio <'
 g.floaterm_height = .9
 g.floaterm_width = .9
