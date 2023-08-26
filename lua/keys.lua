@@ -15,6 +15,10 @@ vks('n', 'gd', vim.lsp.buf.definition, ns)
 vks('n', '<leader>se', ':lua vim.diagnostic.open_float(0, { border, "single"})<cr>', ns)
 vks('i', 'jk', '<esc>', ns)
 
+vks('n', '<leader>rr', '<Plug>RestNvim<CR>', ns)
+vks('n', '<leader>rp', '<Plug>RestNvimPreview<CR>', ns)
+vks('n', '<leader>rl', '<Plug>RestNvimLast<CR>', ns)
+
 vks('i', '<c-j>', function()
 	local luasnip = require('luasnip')
 	if luasnip.jumpable(1) then

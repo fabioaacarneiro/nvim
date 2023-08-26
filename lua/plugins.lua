@@ -6,6 +6,12 @@ require('packer').startup(function(use)
   use 'voldikss/vim-floaterm'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lua/plenary.nvim'
+	use {
+		'rest-nvim/rest.nvim',
+		config = function()
+			require('rest-setup-nvim')
+		end
+	}
   use {
     'nvim-tree/nvim-tree.lua',
     config = function()

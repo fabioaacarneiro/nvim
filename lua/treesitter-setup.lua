@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup {
-  ensure_installed = {'python', 'c', 'cpp', 'php'},
+  ensure_installed = {'python', 'c', 'cpp', 'php', 'http', 'json'},
   highlight = {enable = true},
   indent = {enable = true}
 }
