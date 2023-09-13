@@ -5,3 +5,5 @@
 require "plugins"
 require "setup"
 require "keys"
+
+require "nvim-lspconfig-servers"

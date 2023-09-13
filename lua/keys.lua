@@ -20,9 +20,9 @@ vks('n', '<leader>rr', '<Plug>RestNvim<CR>', ns)
 vks('n', '<leader>rp', '<Plug>RestNvimPreview<CR>', ns)
 vks('n', '<leader>rl', '<Plug>RestNvimLast<CR>', ns)
 
-vks({"i"}, "<C-k>", function() luasnip.expand() end, {silent = true})
-vks({"i", "s"}, "<tab>", function() luasnip.jump( 1) end, {silent = true})
-vks({"i", "s"}, "<s-tab>", function() luasnip.jump(-1) end, {silent = true})
+vks({"i"}, "<C-l>", function() luasnip.expand() end, ns)
+vks({"i", "s"}, "<c-k>", function() luasnip.jump( 1) end, ns)
+vks({"i", "s"}, "<c-j>", function() luasnip.jump(-1) end, ns)
 
 vks({"i", "s"}, "<C-e>", function()
 	if luasnip.choice_active() then

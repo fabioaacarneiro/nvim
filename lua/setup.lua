@@ -7,6 +7,7 @@ g.mapleader = ','
 o.termguicolors = true
 require('colorizer').setup()
 
+g.php_htmlInString = true
 o.compatible = false
 o.mouse = 'a'
 o.swapfile = false
