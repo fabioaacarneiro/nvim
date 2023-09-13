@@ -1,5 +1,6 @@
 local ns = { noremap = true, silent = true }
 local vks = vim.keymap.set
+local luasnip = require('luasnip')
 
 vks('n', ';', ':', ns)
 vks('n', '<c-j>', ':resize -1<cr>', ns)
@@ -19,18 +20,12 @@ vks('n', '<leader>rr', '<Plug>RestNvim<CR>', ns)
 vks('n', '<leader>rp', '<Plug>RestNvimPreview<CR>', ns)
 vks('n', '<leader>rl', '<Plug>RestNvimLast<CR>', ns)
 
-vks('i', '<c-j>', function()
-	local luasnip = require('luasnip')
-	if luasnip.jumpable(1) then
-		luasnip.jump(1)
+vks({"i"}, "<C-k>", function() luasnip.expand() end, {silent = true})
+vks({"i", "s"}, "<tab>", function() luasnip.jump( 1) end, {silent = true})
+vks({"i", "s"}, "<s-tab>", function() luasnip.jump(-1) end, {silent = true})
+
+vks({"i", "s"}, "<C-e>", function()
+	if luasnip.choice_active() then
+		luasnip.change_choice(1)
 	end
-end)
-
-
-vks('i', '<c-k>', function()
-	local luasnip = require('luasnip')
-	if luasnip.jumpable(-1) then
-		luasnip.jump(-1)
-	end
-end)
-
+end, {silent = true})
